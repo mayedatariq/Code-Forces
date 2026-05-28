@@ -6,7 +6,12 @@ int main()
 {
     string str;
     cin >> str;
-    str[0] = toupper(str[0]);
+    
+    if (str[0] >= 'a' && str[0] <= 'z')
+    {
+        str[0] = str[0] - 32;
+    }
+    
     cout << str;
  
     return 0;
